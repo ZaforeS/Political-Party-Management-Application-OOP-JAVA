@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.politicalparty.controllers.Manager.managerHomeController">
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+   <children>
+      <Label fx:id="loginLbl" text="Logged in as: ">
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </Label>
+      <Label fx:id="jobWindowStatusLbl" text="Job Window Status: Close" />
+      <HBox fx:id="bodyHbox" prefHeight="393.0" prefWidth="584.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="363.0" prefWidth="193.0">
+               <children>
+                  <Button fx:id="requestProjectReportBtn" mnemonicParsing="false" onAction="#onRequestProjectReportBtnClick" prefHeight="25.0" prefWidth="238.0" text="Request Project Report">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="forwardReportBtn" mnemonicParsing="false" onAction="#onForwardReportBtnClick" prefHeight="25.0" prefWidth="392.0" text="Forward Report">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="forwardNlcFeedback" mnemonicParsing="false" onAction="#onForwardNlcFeedbackClick" prefHeight="25.0" prefWidth="399.0" text="Forward NLC Feedback">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="toggleJobWindowBtn" mnemonicParsing="false" onAction="#onToggleJobWindowBtnClick" prefHeight="25.0" prefWidth="185.0" text="Toggle Job Window">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="viewJobApplicationBtn" mnemonicParsing="false" onAction="#onViewJobApplicationBtnClick" prefHeight="25.0" prefWidth="327.0" text="View Job Application">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="hireApplicant" mnemonicParsing="false" onAction="#onHireApplicantClick" prefHeight="25.0" prefWidth="312.0" text="Hire Applicant">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#onLogoutBtnClick" prefHeight="25.0" prefWidth="331.0" text="Log Out">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="goalContent" prefHeight="363.0" prefWidth="468.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
