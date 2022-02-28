@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.politicalparty.controllers.FM.ProjectApprovalController">
+   <children>
+      <TableView fx:id="projectTableView" prefHeight="200.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="projectNameCol" prefWidth="95.0" text="Project Name" />
+          <TableColumn fx:id="projectCreatorCol" prefWidth="95.0" text="Project Creator" />
+            <TableColumn fx:id="projectExpenditureCol" prefWidth="95.0" text="Expenditure" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="4.0" />
+         </VBox.margin>
+      </TableView>
+      <TextField fx:id="modifiedExpenditureField" promptText="Modified Expenditure (if needed)" visible="false">
+         <VBox.margin>
+            <Insets bottom="4.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="14.0" prefWidth="287.0">
+         <children>
+            <Button fx:id="updateExpenditureBtn" mnemonicParsing="false" onAction="#onUpdateExpenditureBtnClick" prefHeight="25.0" prefWidth="209.0" text="Update Expenditure" visible="false">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="sendApprovalBtn" mnemonicParsing="false" onAction="#onSendApprovalBtnClick" prefHeight="25.0" prefWidth="219.0" text="Send Approval">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </padding>
+</VBox>
